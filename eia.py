@@ -30,7 +30,7 @@ parameters = {
 
 # try to fetch from endpoint
 try:
-	response = requests.get("https://api.eia.gov/seriesqwsadx", params=parameters)
+	response = requests.get("https://api.eia.gov/series", params=parameters)
 	response.raise_for_status()
 
 # if connection unsuccessful raise and print error info
